@@ -24,7 +24,7 @@ var memo = document.getElementById("memo");
 var save = document.getElementById("save");
 
 // Today's Date
-$( "#todayDate" ).append( "<p>Test</p>" );
+$( "#todayDate" ).append(moment().format('MMMM Do YYYY'));
 
 // Create more fullCell
 
