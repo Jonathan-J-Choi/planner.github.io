@@ -22,11 +22,13 @@ var fullCell = document.getElementById("fullCell")
 var hour = document.getElementById("hour");
 var memo = document.getElementById("memo");
 var save = document.getElementById("save");
+var planner = document.getElementById("planner");
 
 // Today's Date
 $( "#todayDate" ).append(moment().format('MMMM Do YYYY'));
 
 // Create more fullCell
+$( "#fullCell" ).clone().appendTo( "#planner" );
 
 // times
 var timeBlock = [
