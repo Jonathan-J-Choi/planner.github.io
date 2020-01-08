@@ -29,7 +29,7 @@ $( "#todayDate" ).append(moment().format('MMMM Do YYYY'));
 
 // Create more fullCell
 
-for (i = 0; i < 8; i++) {
+for (i = 0; i < 9; i++) {
   $( "#fullCell" ).clone().appendTo( "#planner" );
 }
 
