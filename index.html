@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <title>Daily Planner</title>
 </head>
+
 <body>
-  
+  <div class="container text-center">
+  <h1 class="header">Hello! Today's Date Is</h1>
+  <div id="todayDate"></div>
+  <hr class="my-4">
+  </div>
+  <div class="container" id="jumbotrn">
+    <div class="jumbotron text-center bg-light">
+      <div id ="hour"></div>
+      <div id ="memo"></div>
+      <div id ="save"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
