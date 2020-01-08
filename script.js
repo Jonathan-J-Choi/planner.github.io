@@ -28,7 +28,10 @@ var planner = document.getElementById("planner");
 $( "#todayDate" ).append(moment().format('MMMM Do YYYY'));
 
 // Create more fullCell
-$( "#fullCell" ).clone().appendTo( "#planner" );
+
+for (i = 0; i < 8; i++) {
+  $( "#fullCell" ).clone().appendTo( "#planner" );
+}
 
 // times
 var timeBlock = [
