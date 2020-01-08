@@ -5,25 +5,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/todo.png">
+
+  <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css" />
+
   <title>Daily Planner</title>
 </head>
 
 <body>
+  <!-- Header -->
   <div class="container text-center">
   <h1 class="header">Hello! Today's Date Is</h1>
   <div id="todayDate"></div>
   <hr class="my-4">
   </div>
+
+  <!-- Planner Body -->
   <div class="container" id="jumbotrn">
     <div class="jumbotron text-center bg-light">
-      <div id ="hour"></div>
-      <div id ="memo"></div>
-      <div id ="save"></div>
+      <div class="row">
+
+        <!-- <div class="column-3">
+          <div id ="hour"></div>
+        </div>
+
+        <div class="column-6">
+          <div id ="memo"></div>
+        </div>
+
+        <div class = "column-3">
+          <div id ="save"></div>
+        </div> -->
+
+        <!-- One Planner Cell -->
+        <div class="input-group mb-3" id="fullCell">
+          <!-- Hour -->
+          <span class="input-group-text" id="inputGroup-sizing-default hour">Hour</span>
+          <!-- Memo -->
+          <input type="text" id="memo" class="form-control" placeholder="Memo">
+          <div class="input-group-append">
+            <!-- Save Button -->
+          <button class="btn btn-outline-secondary" id="save" type="button">Save</button>
+          </div>
+        </div>
+
+      </div>  
     </div>
   </div>
+
+  <!-- jQuery and JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="script.js"></script>
 </body>
