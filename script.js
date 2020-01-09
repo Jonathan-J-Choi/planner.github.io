@@ -18,6 +18,7 @@ var save6 = document.getElementById("#save6");
 var save7 = document.getElementById("#save7");
 var save8 = document.getElementById("#save8");
 var save9 = document.getElementById("#save9");
+var clr = document.getElementById("#clr")
 
 
 
@@ -25,12 +26,17 @@ var save9 = document.getElementById("#save9");
 function updateTime(){
 $( "#todayDate" ).html(moment().format('MMMM Do YYYY, h:mm:ss a'));
 }
-                                                     
 updateTime();
 setInterval(function(){
- updateTime();
+updateTime();
 },1000);
 
+// Color changing with time
+function updateColor(){
+// if hour is > moment hour background color of input = green
+// if hour is = moment hour background color of input = red
+// if hour is < moment hour background color of input = grey
+}
 
 // Store to local storage when click save
 $("#save1").click(function(){
@@ -86,6 +92,13 @@ $("#save9").click(function(){
   alert("Your changes have been saved!");
   var input = document.getElementById('memo9').value;
   localStorage.setItem('memo9', input);
+});
+
+// Click to reset local storage
+$("#clr").click(function(){
+    localStorage.clear();
+    location.reload();
+    alert("Schedule cleared! It's time to party!");
 });
 
 
