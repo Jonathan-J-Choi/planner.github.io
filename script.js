@@ -28,19 +28,27 @@ var hour12 = document.getElementById("#hour12");
 var hour13 = document.getElementById("#hour13");
 var hour14 = document.getElementById("#hour14");
 var hour15 = document.getElementById("#hour15");
+var hour16 = document.getElementById("#hour16");
+var hour17 = document.getElementById("#hour17");
 
 // Hour value in 24 hour
-hour9 = 9;
-hour10 = 10;
-hour11 = 11;
-hour12 = 12;
-hour13 = 13;
-hour14 = 14;
-hour15 = 15;
+hour9 = "09";
+hour10 = "10";
+hour11 = "11";
+hour12 = "12";
+hour13 = "13";
+hour14 = "14";
+hour15 = "15";
+hour16 = "16";
+hour17 = "17";
+
+var momentH = moment().format("H");
+console.log(momentH)
+
 
 // Today's Date and Updating with Seconds
 function updateTime(){
-$( "#todayDate" ).html(moment().format('MMMM Do YYYY, hh:mm:ss a'));
+$( "#todayDate" ).html(moment().format('MMMM Do YYYY, h:mm:ss A'));
 }
 updateTime();
 setInterval(function(){
@@ -49,11 +57,105 @@ updateTime();
 
 // Color changing with time
 function updateColor(){
-// if hour# is > moment hour# background color of input = green
-// if hour# is = moment hour# background color of input = red
-// if hour# is < moment hour# background color of input = grey
+  if (hour9 << momentH){
+    $("#memo1").css("background-color","#EEECF1");
+  }
+  if(hour9 == momentH){
+    $("#memo1").css("background-color", "#FFDDDD");
+  }
+  if(hour9 > momentH){
+    $("#memo1").css("background-color", "#D9FFDF");
+  }
+
+  if (hour10 << momentH){
+    $("#memo2").css("background-color","#EEECF1" );
+  }
+  if(hour10 == momentH){
+    $("#memo2").css("background-color", "#FFDDDD");
+  }
+  if(hour10 > momentH){
+    $("#memo2").css("background-color", "#D9FFDF");
+  }
+
+  if (hour11 << momentH){
+    $("#memo3").css("background-color","#EEECF1" );
+  }
+  if(hour11 == momentH){
+    $("#memo3").css("background-color", "#FFDDDD");
+  }
+  if(hour11 > momentH){
+    $("#memo3").css("background-color", "#D9FFDF");
+  }
+
+  if (hour12 << momentH){
+    $("#memo4").css("background-color","#EEECF1" );
+  }
+  if(hour12 == momentH){
+    $("#memo4").css("background-color", "#FFDDDD");
+  }
+  if(hour12 > momentH){
+    $("#memo4").css("background-color", "#D9FFDF");
+  }
+
+  if (hour13 << momentH){
+    $("#memo5").css("background-color", "#EEECF1");
+  }
+  if(hour13 == momentH){
+    $("#memo5").css("background-color", "#FFDDDD");
+  }
+  if(hour13 > momentH){
+    $("#memo5").css("background-color", "#D9FFDF");
+  }
+
+  if (hour14 << momentH){
+    $("#memo6").css("background-color", "#EEECF1");
+  }
+  if(hour14 == momentH){
+    $("#memo6").css("background-color", "#FFDDDD");
+  }
+  if(hour14 > momentH){
+    $("#memo6").css("background-color", "#D9FFDF");
+  }
+
+  if (hour15 << momentH){
+    $("#memo7").css("background-color", "#EEECF1");
+  }
+  if(hour15 == momentH){
+    $("#memo7").css("background-color", "#FFDDDD");
+  }
+  if(hour15 > momentH){
+    $("#memo7").css("background-color", "#D9FFDF");
+  }
+
+  if (hour16 << momentH){
+    $("#memo8").css("background-color", "#EEECF1");
+  }
+  if(hour16 == momentH){
+    $("#memo8").css("background-color", "#FFDDDD");
+  }
+  if(hour16 > momentH){
+    $("#memo8").css("background-color", "#D9FFDF");
+  }
+
+  if (hour17 << momentH){
+    $("#memo9").css("background-color", "#EEECF1");
+  }
+  if(hour17 == momentH){
+    $("#memo9").css("background-color", "#FFDDDD");
+  }
+  else if (hour17 > momentH){
+    $("#memo9").css("background-color", "#D9FFDF");
+  }
+// if hour# is > moment hour# background color of input = #D9FFDF green
+// if hour# is = moment hour# background color of input = #FFDDDD red
+// if hour# is < moment hour# background color of input = #EEECF1 grey
 // refresh page every min to check if hour has changed and rerun function
 }
+
+updateColor();
+setInterval(function(){
+updateColor();
+},1000);
 
 // Store to local storage when click save
 $("#save1").click(function(){
