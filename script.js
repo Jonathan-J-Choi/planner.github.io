@@ -18,13 +18,29 @@ var save6 = document.getElementById("#save6");
 var save7 = document.getElementById("#save7");
 var save8 = document.getElementById("#save8");
 var save9 = document.getElementById("#save9");
-var clr = document.getElementById("#clr")
+var clr = document.getElementById("#clr");
 
+// Hours
+var hour9 = document.getElementById("#hour9");
+var hour10 = document.getElementById("#hour10");
+var hour11 = document.getElementById("#hour11");
+var hour12 = document.getElementById("#hour12");
+var hour13 = document.getElementById("#hour13");
+var hour14 = document.getElementById("#hour14");
+var hour15 = document.getElementById("#hour15");
 
+// Hour value in 24 hour
+hour9 = 9;
+hour10 = 10;
+hour11 = 11;
+hour12 = 12;
+hour13 = 13;
+hour14 = 14;
+hour15 = 15;
 
 // Today's Date and Updating with Seconds
 function updateTime(){
-$( "#todayDate" ).html(moment().format('MMMM Do YYYY, h:mm:ss a'));
+$( "#todayDate" ).html(moment().format('MMMM Do YYYY, hh:mm:ss a'));
 }
 updateTime();
 setInterval(function(){
@@ -33,9 +49,10 @@ updateTime();
 
 // Color changing with time
 function updateColor(){
-// if hour is > moment hour background color of input = green
-// if hour is = moment hour background color of input = red
-// if hour is < moment hour background color of input = grey
+// if hour# is > moment hour# background color of input = green
+// if hour# is = moment hour# background color of input = red
+// if hour# is < moment hour# background color of input = grey
+// refresh page every min to check if hour has changed and rerun function
 }
 
 // Store to local storage when click save
