@@ -20,6 +20,7 @@ var save8 = document.getElementById("#save8");
 var save9 = document.getElementById("#save9");
 
 
+
 // Today's Date and Updating with Seconds
 function updateTime(){
 $( "#todayDate" ).html(moment().format('MMMM Do YYYY, h:mm:ss a'));
@@ -87,6 +88,7 @@ $("#save9").click(function(){
   localStorage.setItem('memo9', input);
 });
 
+
 // Get Saved Memos When Page Loads
 $(document).ready( function() {
   document.getElementById('memo1').value = localStorage.getItem('memo1');
@@ -99,4 +101,6 @@ $(document).ready( function() {
   document.getElementById('memo8').value = localStorage.getItem('memo8');
   document.getElementById('memo9').value = localStorage.getItem('memo9');
 });
+
+
 
