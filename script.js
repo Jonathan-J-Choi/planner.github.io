@@ -42,6 +42,7 @@ hour15 = "15";
 hour16 = "16";
 hour17 = "17";
 
+// Current Hour
 var momentH = moment().format("HH");
 console.log(momentH);
 
@@ -149,42 +150,42 @@ function updateColor() {
 updateColor();
 setInterval(function() {
   updateColor();
-}, 1000);
+}, 60000);
 
 // Store to local storage when click save
 $("#save1").click(function() {
-  alert("Your changes have been saved!");
+  alert("Alright! I'll go ahead and save that to your memo!");
   var input = document.getElementById("memo1").value;
   localStorage.setItem("memo1", input);
 });
 
 // Save
 $("#save2").click(function() {
-  alert("Your changes have been saved!");
+  alert("Alright! I'll go ahead and save that to your memo!");
   var input = document.getElementById("memo2").value;
   localStorage.setItem("memo2", input);
 });
 
 $("#save3").click(function() {
-  alert("Your changes have been saved!");
+  alert("Alright! I'll go ahead and save that to your memo!");
   var input = document.getElementById("memo3").value;
   localStorage.setItem("memo3", input);
 });
 
 $("#save4").click(function() {
-  alert("Your changes have been saved!");
+  alert("Alright! I'll go ahead and save that to your memo!");
   var input = document.getElementById("memo4").value;
   localStorage.setItem("memo4", input);
 });
 
 $("#save5").click(function() {
-  alert("Your changes have been saved!");
+  alert("Alright! I'll go ahead and save that to your memo!");
   var input = document.getElementById("memo5").value;
   localStorage.setItem("memo5", input);
 });
 
 $("#save6").click(function() {
-  alert("Your changes have been saved!");
+  alert("Alright! I'll go ahead and save that to your memo!");
   var input = document.getElementById("memo6").value;
   localStorage.setItem("memo6", input);
 });
@@ -196,13 +197,13 @@ $("#save7").click(function() {
 });
 
 $("#save8").click(function() {
-  alert("Your changes have been saved!");
+  alert("Alright! I'll go ahead and save that to your memo!");
   var input = document.getElementById("memo8").value;
   localStorage.setItem("memo8", input);
 });
 
 $("#save9").click(function() {
-  alert("Your changes have been saved!");
+  alert("Alright! I'll go ahead and save that to your memo!");
   var input = document.getElementById("memo9").value;
   localStorage.setItem("memo9", input);
 });
