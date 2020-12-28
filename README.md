@@ -1,4 +1,4 @@
-Welcome to Karen!
+Welcome to Circadia!
 Your personal daily planner.
 
 Karen gives you the time and date, updating every second.
